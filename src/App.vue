@@ -29,8 +29,10 @@ const { isLoading, data: employees } = useQuery("employees", async () => {
 <template>
   <main class="flex">
     <AppSidebar :isOpen="navbarOpen" class="max-w-[150px] h-screen flex-1" />
-    <div class="flex-1">
-      <header class="bg-white flex justify-between items-center py-8 px-8">
+    <div class="flex-1 h-screen overflow-y-auto pb-8">
+      <header
+        class="bg-white flex justify-between items-center py-8 px-8 sticky top-0 z-40"
+      >
         <div class="flex items-center gap-2">
           <!-- <button @click="navbarOpen = !navbarOpen">
             <img src="./assets/svg/menu-close.svg" class="h-7 w-7" alt="" />
