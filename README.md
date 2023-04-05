@@ -15,6 +15,8 @@ Setup
 
 ### Improvements that could have been done
 
+- Handle error state (when an error occurs during data fetching)
+- Split api requests into separate files for modularity
 - Put API url into .env file for security reasons
 - Break components into smaller components and configure to receive appropriate props
 - sidebar animates in when toggle button is clicked with an overlay over the remaining parts of the screen
