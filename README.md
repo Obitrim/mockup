@@ -8,6 +8,7 @@
 Setup
 
 - Clone repository: `git clone https://github.com/Obitrim/mockup.git`
+- Navigate into project directory
 - Run `yarn` in your command line to install packages
 - Run `yarn dev` to start up project
 - Access project on `http://localhost:5173/` provided port 5173 is default. If not, use port number provided when `yarn dev` was run
