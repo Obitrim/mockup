@@ -44,7 +44,7 @@ const { isLoading, data: employees } = useQuery("employees", async () => {
         </button>
       </header>
       <div class="mx-8">
-        <SkeletonLoader :count="10" v-if="isLoading" />
+        <SkeletonLoader class="!mt-24" :count="10" v-if="isLoading" />
         <BaseTable v-else :data="employees" class="w-full" />
       </div>
     </div>
