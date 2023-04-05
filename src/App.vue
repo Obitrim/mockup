@@ -11,7 +11,7 @@ const navbarOpen = reactive(false);
 
 const { isLoading, data: employees } = useQuery("employees", async () => {
   const response = await axios.get(
-    `[SERVER_URL]`,
+    `https://staging-backend.teamwell.co/items/employees`,
     {
       headers: {
         Authorization: `Bearer [TOKEN]`,
