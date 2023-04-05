@@ -10,7 +10,7 @@ const props = defineProps({
   },
   pageSize: {
     type: Number,
-    default: 10,
+    default: 30,
   },
 });
 
@@ -79,9 +79,12 @@ function deleteItem(id) {
           <td class="px-4 py-2 whitespace-nowrap text-ellipsis">
             <span
               :class="{
-                'bg-green-200 text-green-700': item.status === 'published',
+                'bg-green-200 text-green-700 lowercase':
+                  item.status.toLowerCase() === 'published',
+                'bg-red-200 text-red-700':
+                  item.status.toLowerCase() !== 'published',
               }"
-              class="bg-red-200 text-red-700 inline-block rounded-full px-3 py-1 text-xs font-semibold"
+              class="inline-block rounded-full px-3 py-1 text-xs font-semibold"
               >{{ item.status }}</span
             >
           </td>

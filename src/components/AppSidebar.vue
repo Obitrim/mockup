@@ -1,12 +1,5 @@
 <script setup>
-import {
-  reactive,
-  computed,
-  watchEffect,
-  defineEmits,
-  defineProps,
-  onMounted,
-} from "vue";
+import { reactive, computed, watchEffect, onMounted } from "vue";
 
 const props = defineProps(["isOpen"]);
 const emit = defineEmits(["onOpen"]);
