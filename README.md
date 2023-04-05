@@ -11,7 +11,7 @@ Setup
 - Navigate into project directory
 - Run `yarn` in your command line to install packages
 - Replace `[TOKEN]` in App.vue component with access token
-[code](https://github.com/Obitrim/mockup/blob/main/public/APi.png)
+![code](https://github.com/Obitrim/mockup/blob/main/public/APi.png)
 - Run `yarn dev` to start up project
 - Access project on `http://localhost:5173/` provided port 5173 is default. If not, use port number provided when `yarn dev` was run
 
