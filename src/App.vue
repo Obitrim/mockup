@@ -14,7 +14,7 @@ const { isLoading, data: employees } = useQuery("employees", async () => {
     `https://staging-backend.teamwell.co/items/employees`,
     {
       headers: {
-        Authorization: `Bearer tzGLgauh3jwfkryrRklMCGpouZfyC0Dc`,
+        Authorization: `Bearer [TOKEN]`,
       },
       params: {
         fields: "*.*",
